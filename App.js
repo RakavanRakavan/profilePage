@@ -14,23 +14,22 @@ import {
   Text,
   View,
 } from 'react-native';
+import BottomTab from './src/navigation/bottomTab';
+import { NavigationContainer } from '@react-navigation/native';
 
 function App() {
 
   return (
-    <SafeAreaView style={styles.Container}>
-     <View>
-      <Text>dfgdfg</Text>
-     </View>
-    </SafeAreaView>
+       <NavigationContainer>
+      <BottomTab />
+    </NavigationContainer>
   );
 }
 
 const styles = StyleSheet.create({
   Container: {
    flex:1,
-   justifyContent:"center",
-   alignItems:"center"
+   backgroundColor:"#fff",
 
   },
 });
